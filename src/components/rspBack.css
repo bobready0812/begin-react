@@ -1,0 +1,15 @@
+.background {
+    background-color: rgb(255, 135, 135);
+    width: 100vw;
+    height: 100vw;
+}
+
+.title {
+    font-size: 70px;
+    position: fixed;
+    margin: 0;
+    left: 41%;
+    color: rgb(240, 217, 217);
+  
+    
+}
