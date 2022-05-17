@@ -12,8 +12,8 @@ function App() {
   return (
     <>
     <Back>
-      <Com />
-      <User />
+      <Com comValue={comValue} />
+      <User userValue={userValue}/>
     </Back>
     </>
   );
