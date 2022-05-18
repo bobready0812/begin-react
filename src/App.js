@@ -8,6 +8,8 @@ import User from './components/rspUser';
 function App() {
   const [comValue, setComValue] = useState(""); 
   const [userValue, setUserValue] = useState("");
+  const [comWin, setComWin] = useState("");
+  const [userWin, setUserWin] = useState("");
 
   return (
     <>
@@ -16,6 +18,10 @@ function App() {
     userValue={userValue}
     setComValue={setComValue}
     setUserValue={setUserValue}
+    comWin={comWin}
+    userWin={userWin}
+    setComWin={setComWin}
+    setUserWin={setUserWin}
     >
       <Com comValue={comValue} />
       <User userValue={userValue}/>

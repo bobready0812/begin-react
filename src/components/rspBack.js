@@ -1,13 +1,24 @@
 import React from "react";
 import './rspBack.css';
 
-const Back = ({children, comValue, setComValue, userValue, setUserValue}) => {
+const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin, setComWin, userWin, setUserWin}) => {
     const valueArr = ["가위", "바위", "보"];
-    const onClick = () => {
-        const num1 = Math.floor(Math.random() * 3)
-        const num2 = Math.floor(Math.random() * 3)
+    const onClick1 = () => {
+        const num1 = Math.floor(Math.random() * 3);
         setComValue(valueArr[num1]);
-        setUserValue(valueArr[num2]);
+        setUserValue("가위");
+    }
+
+    const onClick2 = () => {
+        const num1 = Math.floor(Math.random() * 3);
+        setComValue(valueArr[num1]);
+        setUserValue("바위");
+    }
+
+    const onClick3 = () => {
+        const num1 = Math.floor(Math.random() * 3);
+        setComValue(valueArr[num1]);
+        setUserValue("보");
     }
 
 
@@ -15,8 +26,14 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue}) => {
         <div className="background">
         <h1 className="title">가위 바위 보!</h1>
         <div>{children}</div>
-        <div onClick={onClick} className="btn">
-           <h1 className="btnh1">시작</h1>
+        <div onClick={onClick1} className="btn">
+           <h1 className="btnh1">가위</h1>
+        </div>
+        <div onClick={onClick2} className="btn2">
+           <h1 className="btnh1">바위</h1>
+        </div>
+        <div onClick={onClick3} className="btn3">
+           <h1 className="btnh1">보</h1>
         </div>
         </div>
     )

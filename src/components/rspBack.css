@@ -23,7 +23,33 @@
     justify-content: center;
     border-radius: 30px;
     position: fixed;
-    top:400px;
+    top:250px;
+    right: 940px;
+}
+
+.btn2 {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(6, 139, 79);
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: fixed;
+    top:450px;
+    right: 940px;
+}
+
+.btn3 {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(233, 162, 47);
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: fixed;
+    top:700px;
     right: 940px;
 }
 
