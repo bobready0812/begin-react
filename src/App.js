@@ -23,8 +23,8 @@ function App() {
     setComWin={setComWin}
     setUserWin={setUserWin}
     >
-      <Com comValue={comValue} />
-      <User userValue={userValue}/>
+      <Com comValue={comValue} comWin={comWin}/>
+      <User userValue={userValue} userWin={userWin}/>
     </Back>
     </>
   );
