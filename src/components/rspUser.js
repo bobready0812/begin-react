@@ -1,10 +1,11 @@
 import React from "react";
 import './rspUser.css';
 
-const User = () => {
+const User = ( {userValue}) => {
     return (
         <div className="userBack">
             <h1 className="userh1">User(승리)</h1>
+            <h1>{userValue}</h1>
         </div>
     )
 }

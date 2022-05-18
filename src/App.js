@@ -6,8 +6,8 @@ import Com from './components/rspCom';
 import User from './components/rspUser';
 
 function App() {
-  const [comValue, setComValue] = useState("가위"); 
-  const [userValue, setUserValue] = useState("바위");
+  const [comValue, setComValue] = useState(""); 
+  const [userValue, setUserValue] = useState("");
 
   return (
     <>

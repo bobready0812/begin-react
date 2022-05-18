@@ -6,7 +6,8 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue}) => {
     const onClick = () => {
         const num1 = Math.floor(Math.random() * 3)
         const num2 = Math.floor(Math.random() * 3)
-        console.log(num1,num2);
+        setComValue(valueArr[num1]);
+        setUserValue(valueArr[num2]);
     }
 
 
