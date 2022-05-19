@@ -7,22 +7,48 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
         const num1 = Math.floor(Math.random() * 3);
         setComValue(valueArr[num1]);
         setUserValue("가위");
-        if(comValue === "가위") {
+        if(num1 === 0 ) {
             setComWin("비김");
             setUserWin("비김");
-        } else if (comValue === "바위")
+        } else if (num1 === 1) {
+            setComWin("이김!");
+            setUserWin("짐");
+        } else {
+            setComWin("짐");
+            setUserWin("이김");
+        }
     }
 
     const onClick2 = () => {
         const num1 = Math.floor(Math.random() * 3);
         setComValue(valueArr[num1]);
         setUserValue("바위");
+        if(num1 === 0 ) {
+            setComWin("짐");
+            setUserWin("이김");
+        } else if (num1 === 1) {
+            setComWin("비김");
+            setUserWin("비김");
+        } else {
+            setComWin("이김");
+            setUserWin("짐");
+        }
     }
 
     const onClick3 = () => {
         const num1 = Math.floor(Math.random() * 3);
         setComValue(valueArr[num1]);
         setUserValue("보");
+        if(num1 === 0 ) {
+            setComWin("비김");
+            setUserWin("비김");
+        } else if (num1 === 1) {
+            setComWin("이김!");
+            setUserWin("짐");
+        } else {
+            setComWin("짐");
+            setUserWin("이김");
+        }
     }
 
 
