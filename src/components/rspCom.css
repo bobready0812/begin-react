@@ -14,3 +14,11 @@
     position: relative;
     left: 20px;
 }
+
+.comValue {
+    position: relative;
+    font-size: 100px;
+    left:135px;
+    top:120px;
+ 
+ }
