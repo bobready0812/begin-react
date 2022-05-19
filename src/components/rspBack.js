@@ -7,6 +7,10 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
         const num1 = Math.floor(Math.random() * 3);
         setComValue(valueArr[num1]);
         setUserValue("가위");
+        if(comValue === "가위") {
+            setComWin("비김");
+            setUserWin("비김");
+        } else if (comValue === "바위")
     }
 
     const onClick2 = () => {
