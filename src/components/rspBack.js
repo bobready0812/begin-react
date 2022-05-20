@@ -15,7 +15,7 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
             setUserWin("패배ㅠ");
         } else {
             setComWin("패배ㅠ");
-            setUserWin("이김");
+            setUserWin("승리");
         }
     }
 
@@ -24,14 +24,14 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
         setComValue(valueArr[num1]);
         setUserValue("바위");
         if(num1 === 0 ) {
-            setComWin("짐");
-            setUserWin("이김");
+            setComWin("패배ㅠ");
+            setUserWin("승리!");
         } else if (num1 === 1) {
             setComWin("비김");
             setUserWin("비김");
         } else {
-            setComWin("이김");
-            setUserWin("짐");
+            setComWin("승리!");
+            setUserWin("패배ㅠ");
         }
     }
 
