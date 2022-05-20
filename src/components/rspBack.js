@@ -11,10 +11,10 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
             setComWin("비김");
             setUserWin("비김");
         } else if (num1 === 1) {
-            setComWin("이김!");
-            setUserWin("짐");
+            setComWin("승리!");
+            setUserWin("패배ㅠ");
         } else {
-            setComWin("짐");
+            setComWin("패배ㅠ");
             setUserWin("이김");
         }
     }
