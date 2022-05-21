@@ -3,20 +3,35 @@ import './rspBack.css';
 
 const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin, setComWin, userWin, setUserWin}) => {
     const valueArr = ["가위", "바위", "보"];
+    
+    const judge= (a,b) => {
+     const num3 = valueArr.indexOf(a) - valueArr.indexOf(b);
+     if(num3 === 0) {
+         setUserWin("비김");
+         setComWin("비김");
+     } else if (num3 === 1){
+         setComWin("이김");
+         setUserValue("짐");
+     } else if (num3 === 2){
+         setComWin("짐");
+         setUserValue("이김");
+     } else if (num3 === -1) {
+         setComWin("짐");
+         setUserWin("이김");
+     } else if (num3 === -2) {
+         setComWin("이김");
+         setUserWin("짐");
+     }
+    
+    }
+
     const onClick1 = () => {
         const num1 = Math.floor(Math.random() * 3);
-        setComValue(valueArr[num1]);
+        const comV = valueArr[num1]
+        setComValue(comV);
         setUserValue("가위");
-        if(num1 === 0 ) {
-            setComWin("비김");
-            setUserWin("비김");
-        } else if (num1 === 1) {
-            setComWin("승리!");
-            setUserWin("패배ㅠ");
-        } else {
-            setComWin("패배ㅠ");
-            setUserWin("승리");
-        }
+        judge(comV, "가위");
+       
     }
 
     const onClick2 = () => {
