@@ -10,17 +10,17 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
          setUserWin("비김");
          setComWin("비김");
      } else if (num3 === 1){
-         setComWin("이김");
-         setUserWin("짐");
+         setComWin("승리");
+         setUserWin("패배");
      } else if (num3 === 2){
-         setComWin("짐");
-         setUserWin("이김")
+         setComWin("패배");
+         setUserWin("승리")
      } else if (num3 === -1) {
-         setComWin("짐");
-         setUserWin("이김");
+         setComWin("패배");
+         setUserWin("승리");
      } else if (num3 === -2) {
-         setComWin("이김");
-         setUserWin("짐");
+         setComWin("승리");
+         setUserWin("패배");
      }
     
     }
