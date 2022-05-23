@@ -42,7 +42,7 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
         judge(comV, "바위");
     }
 
-    const onClick = () => {
+    const onClickP = () => {
         const num1 = Math.floor(Math.random() * 3);
         const comV = valueArr[num1];
         setComValue(comV);
@@ -55,13 +55,13 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
         <div className="background">
         <h1 className="title">가위 바위 보!</h1>
         <div>{children}</div>
-        <div onClick={onClick1} className="btn">
+        <div onClick={onClickS} className="btn">
            <h1 className="btnh1">가위</h1>
         </div>
-        <div onClick={onClick2} className="btn2">
+        <div onClick={onClickR} className="btn2">
            <h1 className="btnh1">바위</h1>
         </div>
-        <div onClick={onClick3} className="btn3">
+        <div onClick={onClickP} className="btn3">
            <h1 className="btnh1">보</h1>
         </div>
         </div>
