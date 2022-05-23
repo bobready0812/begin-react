@@ -25,7 +25,7 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
     
     }
 
-    const onClick1 = () => {
+    const onClickS = () => {
         const num1 = Math.floor(Math.random() * 3);
         const comV = valueArr[num1]
         setComValue(comV);
@@ -34,7 +34,7 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
        
     }
 
-    const onClick2 = () => {
+    const onClickR = () => {
         const num1 = Math.floor(Math.random() * 3);
         const comV = valueArr[num1];
         setComValue(comV);
@@ -42,7 +42,7 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
         judge(comV, "바위");
     }
 
-    const onClick3 = () => {
+    const onClick = () => {
         const num1 = Math.floor(Math.random() * 3);
         const comV = valueArr[num1];
         setComValue(comV);
