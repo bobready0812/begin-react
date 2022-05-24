@@ -14,7 +14,7 @@
     
 }
 
-.btn {
+.btnS {
     display: flex;
     width: 200px;
     height: 100px;
@@ -27,7 +27,7 @@
     right: 940px;
 }
 
-.btn2 {
+.btnR {
     display: flex;
     width: 200px;
     height: 100px;
@@ -40,7 +40,7 @@
     right: 940px;
 }
 
-.btn3 {
+.btnP {
     display: flex;
     width: 200px;
     height: 100px;
