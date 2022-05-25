@@ -36,10 +36,10 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
 
     const onClickR = () => {
         const num1 = Math.floor(Math.random() * 3);
-        const comV = valueArr[num1];
-        setComValue(comV);
+        const comVal = valueArr[num1];
+        setComValue(comVal);
         setUserValue("바위");
-        judge(comV, "바위");
+        judge(comVal, "바위");
     }
 
     const onClickP = () => {
