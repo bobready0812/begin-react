@@ -62,7 +62,7 @@ const Back = ({children, comValue, setComValue, userValue, setUserValue, comWin,
            <h1 className="btnh1">바위</h1>
         </div>
         <div onClick={onClickP} className="btnP">
-           <h1 className="btnh1">암고잉투 백엔드</h1>
+           <h1 className="btnh1">보</h1>
         </div>
         </div>
     )
